@@ -6,7 +6,7 @@ require_relative 'car.rb'
 
 # Główna klasa - odpowiedzialna za ściągnięcie danych, przefiltrowanie ich i zapisanie wyników do plików csv i pdf.
 class OtomotoScraper
-  # Tablica obiektów reprezentujących samochdy
+  # Tablica obiektów reprezentujących samochody
   # * Array of Car objects
   attr_accessor :cars
 
