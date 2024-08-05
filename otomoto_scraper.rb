@@ -1,4 +1,3 @@
-require 'open-uri'
 require 'httparty'
 require 'nokogiri'
 require 'csv'
@@ -25,7 +24,6 @@ class OtomotoScraper
   def run()
     (@first..@last).each do |n|
       url = "https://www.otomoto.pl/osobowe/bmw?page=#{n}"
-      #html = URI.open(url).read
       html = HTTParty.get(url).body
 
       doc = Nokogiri::XML(html)
